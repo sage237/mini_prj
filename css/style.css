@@ -87,6 +87,11 @@ label {
     color: var(--heading-color);
 }
 
+.common--title {
+    font-size: 2rem;
+    margin: 2.4rem 0 1.2rem 0;
+}
+
 .btn {
     display: inline-block;
     padding: 1.2rem 3.2rem;
@@ -227,3 +232,22 @@ main .container {
 /* Main Section Ended Above */
 
 /* About Section */
+#about-section-card-list {
+    gap: 5rem;
+}
+
+#about-card {
+    text-align: center;
+}
+
+#about-card img {
+    height: 15rem;
+    width: auto;
+    background-color: var(--supporting-color);
+    padding: 2.4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
