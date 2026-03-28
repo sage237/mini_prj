@@ -262,3 +262,10 @@ main .container {
         rotate: 360deg;
     }
 }
+
+/* About Section. Ended */
+#courses-section {
+    background-color: var(--bg-color);
+}
+
+/* Courses Section */
