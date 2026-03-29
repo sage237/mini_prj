@@ -75,6 +75,10 @@ label {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-four--cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 /* Modules/ Reusables */
 
 #common-heading {
@@ -269,3 +273,33 @@ main .container {
 }
 
 /* Courses Section */
+#courses-section-card-list {
+    gap: 2.5rem;
+
+}
+
+#course-card {
+    padding: 2.5rem;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+
+    & i {
+        height: 6rem;
+        width: 6rem;
+        background-color: var(--supporting-color);
+        padding: 2.4rem;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        border-radius: 1.8%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        -webkit-border-radius: 1.8%;
+        -moz-border-radius: 1.8%;
+        -ms-border-radius: 1.8%;
+        -o-border-radius: 1.8%;
+    }
+}
