@@ -81,13 +81,13 @@ label {
 
 /* Modules/ Reusables */
 
-#common-heading {
+.common-heading {
     font-size: 3.2rem;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-#common-subheading {
+.common-subheading {
     color: var(--heading-color);
 }
 
@@ -240,11 +240,11 @@ main .container {
     gap: 5rem;
 }
 
-#about-card {
+.about-card {
     text-align: center;
 }
 
-#about-card img {
+.about-card img {
     height: 15rem;
     width: auto;
     background-color: var(--supporting-color);
@@ -278,7 +278,7 @@ main .container {
 
 }
 
-#course-card {
+.course-card {
     padding: 2.5rem;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
@@ -301,5 +301,129 @@ main .container {
         -moz-border-radius: 1.8%;
         -ms-border-radius: 1.8%;
         -o-border-radius: 1.8%;
+    }
+}
+
+#left-div {
+    text-align: end;
+}
+
+#right-div {
+    text-align: start;
+}
+
+/* Why Choose Section */
+#why-choose--details {
+    gap: 9.6rem;
+}
+
+#center-div {
+    display: grid;
+    place-items: center;
+
+    & figure {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+
+        & img {
+            width: 100%;
+        }
+
+        &::before {
+            content: "";
+            width: 130%;
+            /*height: 80%;
+            */
+            aspect-ratio: 1;
+
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+            animation: an 3s linear infinite;
+            -webkit-animation: change-color 3s linear infinite;
+        }
+
+        &::after {
+            content: "";
+            width: 150%;
+            /* height: 80%; */
+            aspect-ratio: 1;
+            background-color: transparent;
+            border: .25rem solid var(--main-color);
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+        }
+
+    }
+
+
+}
+
+.why-choose--list {
+    flex-direction: column;
+    display: flex;
+    gap: 4rem
+}
+
+.why-choose--card {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: end;
+    text-align: right;
+    gap: 2rem;
+}
+
+#right-div .why-choose--card {
+    align-items: start;
+    text-align: start;
+}
+
+#why-choose--details .icon {
+    height: 6rem;
+    width: 6rem;
+    background-color: var(--supporting-color);
+    padding: 2.4rem;
+    border-radius: 50%;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    /* horizontal center */
+    align-items: center;
+    /* vertical center */
+}
+
+@keyframes change-color {
+    0% {
+        background-color: #b3d0ff;
+    }
+
+    25% {
+        background-color: #80b1ff;
+    }
+
+    50% {
+        background-color: #4d91ff;
+    }
+
+    75% {
+        background-color: #99c0ff;
+    }
+
+    100% {
+        background-color: #3381ff;
     }
 }
